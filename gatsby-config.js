@@ -27,11 +27,12 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Droid Sans', 'Droid Serif']
+          families: ['Roboto', 'sans-serif']
         }
       }
     },
