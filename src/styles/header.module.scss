@@ -3,12 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
 
 header {
-  margin-bottom: 1rem;
-
   .container {
-    margin: 0 auto;
-    max-width: 960px;
-    padding: 1.5rem;
+    margin: 1.5rem auto;
+    padding: 0 1.5rem;
+    max-width: 800px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +25,7 @@ header {
       letter-spacing: 2px;
     }
     a.nav-item:hover {
-      color: $black;
+      color: $cta;
     }
     a.active {
       color: $black;

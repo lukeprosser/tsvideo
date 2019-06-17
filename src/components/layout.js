@@ -13,6 +13,10 @@ import Header from "./header"
 import Footer from "./footer"
 import "../styles/layout.scss"
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+library.add(fab)
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

@@ -1,0 +1,15 @@
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem 1.45rem;
+  max-width: 800px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+
+  .blurb {
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+}

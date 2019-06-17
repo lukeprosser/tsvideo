@@ -2,11 +2,36 @@
 
 footer {
   margin-top: auto;
-  padding: 1.5rem;
+  // background-color: #D3D3D3;
   text-align: center;
-  font-size: 0.9rem;
 
-  a {
-    text-decoration: none;
+  .container {
+    margin: 1rem auto;
+    padding: 0 1.5rem 1.45rem;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $cta;
+    }
+
+    .social {
+      max-width: 80%;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 auto 2rem;
+      font-size: 1.5rem;
+    }
+  
+    .credit {
+      margin-top: 4rem;
+      font-size: 0.8rem;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
   }
 }
