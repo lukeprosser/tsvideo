@@ -15,7 +15,8 @@ import "../styles/layout.scss"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-library.add(fab)
+import { faDog } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faDog)
 
 const Layout = ({ children }) => (
   <StaticQuery

@@ -10,10 +10,17 @@ const Header = ({ siteTitle }) => (
       <h1 className={headerStyles.brand}>
         <Link to="/">{siteTitle}</Link>
       </h1>
-      <nav>
-        <Link className={headerStyles.navItem} activeClassName={headerStyles.active} to="/">Work</Link>
-        <Link className={headerStyles.navItem} activeClassName={headerStyles.active} to="/about">About</Link>
+      <input type="checkbox" id="nav-toggle" className={headerStyles.navToggle} />
+      <nav className={headerStyles.navbar}>
+        <ul>
+          <li><Link className={headerStyles.navItem} activeClassName={headerStyles.active} to="/">Work</Link></li>
+          <li><Link className={headerStyles.navItem} activeClassName={headerStyles.active} to="/about">About</Link></li>
+          <li><Link className={headerStyles.navItem} activeClassName={headerStyles.active} to="/clients">Clients</Link></li>
+        </ul>
       </nav>
+      <label htmlFor="nav-toggle" className={headerStyles.navToggleLabel}>
+        <span></span>
+      </label>
     </div>
   </header>
 )
