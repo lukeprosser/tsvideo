@@ -54,15 +54,16 @@
 
       button {
         padding: 0.7em;
-        border: 0;
+        border: 2px solid $cta;
         text-transform: uppercase;
-        color: #fff;
-        background-color: $black;
-        transition: background-color 0.3s ease;
+        letter-spacing: 3px;
+        color: $cta;
+        transition: all 0.3s ease;
       }
 
       button:hover {
         background-color: $cta;
+        color: #FFFFFF;
       }
     }
   }

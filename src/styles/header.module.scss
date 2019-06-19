@@ -12,180 +12,93 @@ header {
     justify-content: space-between;
     text-transform: uppercase;
 
-    .nav-toggle-label { // Hide hamburger
-      display: none;
+    a {
+      text-decoration: none;
     }
 
-    nav.navbar {
-      all: unset;
-      // grid-column: 3 / 4;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-  
-    .nav-list {
-      display: flex;
-    }
-  
-    nav li {
-      margin-left: 3rem;
-      margin-right: 0;
-      margin-bottom: 0;
-    }
-  
-    .nav-item {
-      position: relative;
-      opacity: 1;
-      font-size: 1rem;
-    }
-  
-    .nav-item::before {
-      content: '';
-      display: block;
-      height: 3px;
-      background: #fff;
-      position: absolute;
-      bottom: -.5rem;
-      left: 0;
-      right: 0;
-      transform: scale(0, 1);
-      // transform-origin: left; /* Change direction */
-      transition: transform ease-in-out 250ms;
-    }
-  
-    .nav-item:hover::before {
-      transform: scale(1, 1);
-    }
-  
-    .active-nav-item::before {
-      transform: scale(1, 1);
-      // display: block;
-      // height: 3px;
-      // background: #fff;
-      // position: absolute;
-      // bottom: -.5rem;
-      // left: 0;
-      // right: 0;
-  
-      // padding-bottom: 4px;
-      // border-bottom: 4px solid $primary;
-    }
-
-    h1 {
+    h1.brand {
       margin: 0;
       font-size: 1.8rem;
       font-weight: 300;
       letter-spacing: 6px;
     }
 
-    a.nav-item {
-      margin-left: 2rem;
-      color: $grey;
-      letter-spacing: 2px;
+    .nav-toggle {
+      display: none; // Hide checkbox by default
     }
-    a.nav-item:hover {
-      color: $cta;
+
+    .nav-toggle:checked ~ nav { // '~' looks for any preceding sibling
+      display: block; // Displays nav when nav-toggle-label checked
     }
-    a.active {
-      color: $black;
+
+    label.nav-toggle-label {
+      // display: none; // Hide hamburger
     }
-    a {
-      text-decoration: none;
+
+    label.nav-toggle-label span,
+    label.nav-toggle-label span::before,
+    label.nav-toggle-label span::after {
+      display: block;
+      background: $black;
+      height: 2px;
+      width: 2rem;
+      position: relative;
     }
+
+    label.nav-toggle-label span::before,
+    label.nav-toggle-label span::after {
+      content: '';
+      position: absolute;
+    }
+
+    label.nav-toggle-label span::before {
+      bottom: 7px;
+    }
+
+    label.nav-toggle-label span::after {
+      top: 7px;
+    }
+
+    nav.navbar {
+      display: none;
+      // display: flex;
+      // justify-content: flex-end;
+      // align-items: center;
+
+      ul.nav-list {
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+
+        li.nav-item {
+          margin-bottom: 1rem;
+          margin-right: 1rem;
+        }
+
+        a.nav-item {
+          margin-left: 2rem;
+          color: $grey;
+          letter-spacing: 2px;
+        }
+
+        a.nav-item:hover {
+          color: $cta;
+        }
+        a.active {
+          color: $black;
+        }
+      }
+
+
+    } 
+    
   }
 }
 
 @media screen and (max-width: 600px) {
 
   .container {
-    nav.navbar {
-      position: absolute;
-      // text-align: right;
-      top: 100%;
-      // right: 0;
-      width: 100%;
-      transform: scale(1, 0); /* Width 100% with height hidden */
-      transform-origin: top;
-      transition: transform 400ms ease-in-out;
-    }
     
-    .nav-toggle {
-      display: none; /* Hide on desktop */
-    }
-    
-    .nav-toggle-label {
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin-right: 1.5rem;
-      height: 100%;
-      display: flex;
-      align-items: center;
-    }
-    
-    .nav-toggle-label span,
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after {
-      display: block;
-      position: relative;
-      background: $black;
-      height: 2px;
-      width: 2rem;
-      border-radius: 2px;
-    }
-    
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after {
-      content: '';
-      position: absolute;
-    }
-    
-    .nav-toggle-label span::before {
-      bottom: 7px;
-    }
-    
-    .nav-toggle-label span::after {
-      top: 7px;
-    }
-    
-    nav ul {
-      margin: 1rem 0;
-      padding: 0;
-      list-style: none;
-    }
-    
-    nav li {
-      margin-bottom: 1rem;
-      margin-right: 1rem;
-    }
-
-    .nav-item {
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.2rem;
-      opacity: 0;
-      transition: opacity 150ms ease-in-out; /* Transition for when unchecked */
-    }
-    
-    // .active-nav-item {
-    //   display: block;
-    //   height: 3px;
-    //   background: #fff;
-    //   position: absolute;
-    //   bottom: -.5rem;
-    //   left: 0;
-    //   right: 0;
-    // }
-    
-    .nav-toggle:checked ~ nav { /* Access any preceding sibling with '~' */
-      transform: scale(1, 1);
-    }
-    
-    .nav-toggle:checked ~ nav .nav-item {
-      opacity: 1;
-      transition: opacity 250ms ease-in-out 250ms; /* Transition for when checked */
-    }
   }
   
 }

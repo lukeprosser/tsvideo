@@ -10,9 +10,9 @@ const Header = ({ siteTitle }) => (
       <h1 className={headerStyles.brand}>
         <Link to="/">{siteTitle}</Link>
       </h1>
-      <input type="checkbox" id="nav-toggle" className={headerStyles.navToggle} />
+      <input type="checkbox" id="nav-toggle" className="nav-toggle" className={headerStyles.navToggle} />
       <nav className={headerStyles.navbar}>
-        <ul>
+        <ul className={headerStyles.navList}>
           <li><Link className={headerStyles.navItem} activeClassName={headerStyles.active} to="/">Work</Link></li>
           <li><Link className={headerStyles.navItem} activeClassName={headerStyles.active} to="/about">About</Link></li>
           <li><Link className={headerStyles.navItem} activeClassName={headerStyles.active} to="/clients">Clients</Link></li>
@@ -23,6 +23,21 @@ const Header = ({ siteTitle }) => (
       </label>
     </div>
   </header>
+
+  // <header className={headerStyles.header}>
+  //   <h1><Link to="/" className={headerStyles.title}>{data.site.siteMetadata.title}</Link></h1>
+  //   <input type="checkbox" id="nav-toggle" className={headerStyles.navToggle} />
+  //   <nav className={headerStyles.navbar}>
+  //     <ul className={headerStyles.navList}>
+  //       <li><Link to="/blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Blog</Link></li>
+  //       <li><Link to="/#skills" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Skills</Link></li>
+  //       <li><Link to="/#contact" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Contact</Link></li>
+  //     </ul>
+  //   </nav>
+  //   <label htmlFor="nav-toggle" className={headerStyles.navToggleLabel}>
+  //     <span></span>
+  //   </label>
+  // </header>
 )
 
 Header.propTypes = {
