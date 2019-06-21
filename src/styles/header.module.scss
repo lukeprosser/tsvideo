@@ -24,56 +24,29 @@ header {
     }
 
     .nav-toggle {
-      display: none; // Hide checkbox by default
-    }
-
-    .nav-toggle:checked ~ nav { // '~' looks for any preceding sibling
-      display: block; // Displays nav when nav-toggle-label checked
-    }
-
-    label.nav-toggle-label {
-      // display: none; // Hide hamburger
-    }
-
-    label.nav-toggle-label span,
-    label.nav-toggle-label span::before,
-    label.nav-toggle-label span::after {
-      display: block;
-      background: $black;
-      height: 2px;
-      width: 2rem;
-      position: relative;
-    }
-
-    label.nav-toggle-label span::before,
-    label.nav-toggle-label span::after {
-      content: '';
+      display: none; // Hide checkbox on desktop
       position: absolute;
     }
 
-    label.nav-toggle-label span::before {
-      bottom: 7px;
-    }
-
-    label.nav-toggle-label span::after {
-      top: 7px;
+    .nav-toggle-label {
+      position: absolute; // Take out of flex flow
     }
 
     nav.navbar {
-      display: none;
-      // display: flex;
-      // justify-content: flex-end;
-      // align-items: center;
 
+      li {
+        margin: 0;
+      }
+      
       ul.nav-list {
-        margin: 1rem 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        margin: 0;
         padding: 0;
         list-style: none;
-
-        li.nav-item {
-          margin-bottom: 1rem;
-          margin-right: 1rem;
-        }
+        text-align: right;
 
         a.nav-item {
           margin-left: 2rem;
@@ -88,17 +61,100 @@ header {
           color: $black;
         }
       }
-
-
     } 
     
   }
 }
 
+/* Mobile styles */
 @media screen and (max-width: 600px) {
 
-  .container {
-    
-  }
+  header {
+
+    .container {
+      position: relative;
+      display: block;
+
+      h1.brand {
+        font-size: 1.5rem;
+      }
+
+      .nav-toggle:checked ~ nav { // '~' looks for any preceding sibling
+        transform: scale(1, 1); // Displays nav when nav-toggle-label checked
+      }
+
+      .nav-toggle:checked ~ nav.navbar a.nav-item { // '~' looks for any preceding sibling
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms; // 250ms animation delay
+      }
+
+      label.nav-toggle-label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 25px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      label.nav-toggle-label span,
+      label.nav-toggle-label span::before,
+      label.nav-toggle-label span::after {
+        display: block;
+        background: $black;
+        height: 2px;
+        width: 2rem;
+        position: relative;
+      }
+
+      label.nav-toggle-label span::before,
+      label.nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+      }
+
+      label.nav-toggle-label span::before {
+        bottom: 7px;
+      }
+
+      label.nav-toggle-label span::after {
+        top: 7px;
+      }
+
+      nav.navbar {
+        position: absolute;
+        // display: none;
+        top: 100%;
+        right: 0;
+        margin-top: 1rem;
+        text-align: right;
+        background: #FFFFFF;
+        width: 100%;
+        z-index: 1000;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+
+        li {
+          margin-bottom: 1rem;
+        }
+
+        ul.nav-list {
+          display: block;
+          margin-right: 25px;
+          margin-bottom: 2rem;
   
+          a.nav-item {
+            margin-left: 0;
+            opacity: 0;
+            transition: opacity 150ms ease-in-out;
+          }
+
+        }
+      }
+
+    }
+  }
+
 }
