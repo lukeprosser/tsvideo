@@ -5,38 +5,58 @@
   padding: 0 1.5rem 1.45rem;
   max-width: 800px;
 
+  // .testimonials div:hover {
+  //   color: $black;
+  // }
+
   .testimonials {
     margin-top: 2rem;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "client1 blurb1"
+      "blurb2 client2"
+      "client3 blurb3"
+    ;
 
-    .client-card {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 2rem;
-      justify-items: center;
-      align-items: center;
-      margin: 3rem 0 1rem;
-
-      .client {
-        color: $grey;
-
-        .client-logo {
-          font-size: 5rem;
-        }
-
-        p {
-          margin: 1rem auto;
-        }
-      }
-      .client:hover {
-        color: $black;
-      }
-  
-      .blurb {
-        font-size: 0.8rem;
-        font-style: italic;
-      }
+    .client1 {
+      grid-area: client1;
     }
+    .blurb2 {
+      grid-area: blurb1;
+    }
+    .client2 {
+      grid-area: client2;
+    }
+    .blurb2 {
+      grid-area: blurb2;
+    }
+    .client3 {
+      grid-area: client3;
+    }
+    .blurb3 {
+      grid-area: blurb3;
+    }
+
+    p:not(.client-name) {
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+
+    .client-logo {
+      font-size: 5rem;
+      color: $grey;
+    }
+
+    p.client-name {
+      margin: 1rem auto;
+      color: $grey;
+    }
+    
   }
 }
 
@@ -45,10 +65,15 @@
   .container {
 
     .testimonials {
-
-      .client-card {
-        grid-template-columns: 1fr;
-      }
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "client1"
+        "blurb1"
+        "client2" 
+        "blurb2"
+        "client3"
+        "blurb3"
+      ;
     }
   }
 

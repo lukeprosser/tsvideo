@@ -93,3 +93,19 @@
   }
 
 }
+
+@media screen and (max-width: 400px) {
+
+  .container {
+
+    .about-container {
+
+      .about-image {
+        max-width: 80%;
+      }
+
+    }
+    
+  }
+
+}

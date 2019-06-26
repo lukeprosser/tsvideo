@@ -137,13 +137,14 @@ header {
         transition: transform 400ms ease-in-out;
 
         li {
-          margin-bottom: 1rem;
+          margin-bottom: 2.2rem;
         }
 
         ul.nav-list {
           display: block;
           margin-right: 25px;
-          margin-bottom: 2rem;
+          margin-top: 1rem;
+          margin-bottom: 3rem;
   
           a.nav-item {
             margin-left: 0;
@@ -155,6 +156,18 @@ header {
       }
 
     }
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  header {
+
+    h1.brand {
+      max-width: 200px;
+    }
+
   }
 
 }
