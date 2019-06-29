@@ -1,6 +1,6 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+// import { StaticQuery, graphql } from "gatsby"
+// import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -40,15 +40,3 @@ const ClientPage = (props) => (
 )
 
 export default ClientPage
-
-// export const pageQuery = graphql`
-//   query {
-//     tom: file(relativePath: { eq: "tom.png" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 1000) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `

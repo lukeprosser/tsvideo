@@ -14,7 +14,7 @@ const IndexPage = (props) => (
 
       <a href="https://vimeo.com/channels/skateboarding/65899061" target="_blank" rel="noopener noreferrer">
         <div className={indexStyles.workGridItem}>
-          <Img fluid={props.data.skate.childImageSharp.fluid} className={indexStyles.image} />
+          <Img fluid={props.data.conifers.childImageSharp.fluid} className={indexStyles.image} />
           <div className={indexStyles.imageOverlay}>
             <div className={indexStyles.imageOverlayText}>
               <h3>Project Name</h3>
@@ -25,7 +25,7 @@ const IndexPage = (props) => (
       </a>
       <a href="https://vimeo.com/channels/skateboarding/65899061" target="_blank" rel="noopener noreferrer">
         <div className={indexStyles.workGridItem}>
-          <Img fluid={props.data.skate.childImageSharp.fluid} className={indexStyles.image} />
+          <Img fluid={props.data.conifers.childImageSharp.fluid} className={indexStyles.image} />
           <div className={indexStyles.imageOverlay}>
             <div className={indexStyles.imageOverlayText}>
               <h3>Project Name</h3>
@@ -36,7 +36,7 @@ const IndexPage = (props) => (
       </a>
       <a href="https://vimeo.com/channels/skateboarding/65899061" target="_blank" rel="noopener noreferrer">
         <div className={indexStyles.workGridItem}>
-          <Img fluid={props.data.skate.childImageSharp.fluid} className={indexStyles.image} />
+          <Img fluid={props.data.conifers.childImageSharp.fluid} className={indexStyles.image} />
           <div className={indexStyles.imageOverlay}>
             <div className={indexStyles.imageOverlayText}>
               <h3>Project Name</h3>
@@ -47,7 +47,7 @@ const IndexPage = (props) => (
       </a>
       <a href="https://vimeo.com/channels/skateboarding/65899061" target="_blank" rel="noopener noreferrer">
         <div className={indexStyles.workGridItem}>
-          <Img fluid={props.data.skate.childImageSharp.fluid} className={indexStyles.image} />
+          <Img fluid={props.data.conifers.childImageSharp.fluid} className={indexStyles.image} />
           <div className={indexStyles.imageOverlay}>
             <div className={indexStyles.imageOverlayText}>
               <h3>Project Name</h3>
@@ -58,7 +58,7 @@ const IndexPage = (props) => (
       </a>
       <a href="https://vimeo.com/channels/skateboarding/65899061" target="_blank" rel="noopener noreferrer">
         <div className={indexStyles.workGridItem}>
-          <Img fluid={props.data.skate.childImageSharp.fluid} className={indexStyles.image} />
+          <Img fluid={props.data.conifers.childImageSharp.fluid} className={indexStyles.image} />
           <div className={indexStyles.imageOverlay}>
             <div className={indexStyles.imageOverlayText}>
               <h3>Project Name</h3>
@@ -69,7 +69,7 @@ const IndexPage = (props) => (
       </a>
       <a href="https://vimeo.com/channels/skateboarding/65899061" target="_blank" rel="noopener noreferrer">
         <div className={indexStyles.workGridItem}>
-          <Img fluid={props.data.skate.childImageSharp.fluid} className={indexStyles.image} />
+          <Img fluid={props.data.conifers.childImageSharp.fluid} className={indexStyles.image} />
           <div className={indexStyles.imageOverlay}>
             <div className={indexStyles.imageOverlayText}>
               <h3>Project Name</h3>
@@ -87,7 +87,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    skate: file(relativePath: { eq: "skate.jpg" }) {
+    conifers: file(relativePath: { eq: "conifers.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

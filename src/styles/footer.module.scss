@@ -35,3 +35,35 @@ footer {
     }
   }
 }
+
+@media screen and (min-width: 900px) {
+
+  footer {
+
+    .container {
+
+      .social {
+        max-width: 60%;
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+  footer {
+
+    .container {
+
+      .social {
+        max-width: 45%;
+      }
+
+    }
+
+  }
+
+}

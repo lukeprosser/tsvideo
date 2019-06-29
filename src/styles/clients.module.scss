@@ -3,18 +3,14 @@
 .container {
   margin: 0 auto;
   padding: 0 1.5rem 1.45rem;
-  max-width: 800px;
-
-  // .testimonials div:hover {
-  //   color: $black;
-  // }
+  max-width: 900px;
 
   .testimonials {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     justify-items: center;
     align-items: center;
     grid-template-areas:
@@ -44,19 +40,33 @@
 
     p:not(.client-name) {
       font-size: 0.8rem;
+      font-weight: 300;
       font-style: italic;
+      padding: 1rem;
+      line-height: 2rem;
     }
 
     .client-logo {
       font-size: 5rem;
       color: $grey;
+      transition-property: color;
+      transition-duration: 500ms;
     }
 
     p.client-name {
       margin: 1rem auto;
       color: $grey;
+      transition-property: color;
+      transition-duration: 500ms;
     }
     
+  }
+
+  .testimonials div:hover .client-logo {
+    color: $black;
+  }
+  .testimonials div:hover .client-name {
+    color: $black;
   }
 }
 
