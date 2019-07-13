@@ -13,7 +13,7 @@ const AboutPage = (props) => (
     <div className={aboutStyles.container}>
       <div className={aboutStyles.aboutContainer}>
         <div>
-          <Img fluid={props.data.tom.childImageSharp.fluid} className={aboutStyles.aboutImage} />
+          <Img fluid={props.data.tom_profile.childImageSharp.fluid} className={aboutStyles.aboutImage} />
         </div>
         <div className={aboutStyles.blurb}>
           <p>A filmmaker with an impressive background in digital and social campaigns.</p>
@@ -27,7 +27,7 @@ const AboutPage = (props) => (
       <div className={aboutStyles.formContainer}>
         <h2>Contact</h2>
         <form className={aboutStyles.contactForm} name="tsvideo-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="bot-field" value="contact" />
           <div className={aboutStyles.formGroup}>
             <label>Name</label>
             <input type="text" name="name" placeholder="Full Name" />
@@ -51,7 +51,7 @@ export default AboutPage
 
 export const pageQuery = graphql`
   query {
-    tom: file(relativePath: { eq: "tom.png" }) {
+    tom_profile: file(relativePath: { eq: "tom_profile.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

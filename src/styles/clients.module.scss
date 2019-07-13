@@ -5,6 +5,10 @@
   padding: 0 1.5rem 1.45rem;
   max-width: 900px;
 
+  .line {
+    margin: 4rem 0 3rem;
+  }
+
   .testimonials {
     margin-top: 2rem;
     display: grid;
@@ -38,14 +42,6 @@
       grid-area: blurb3;
     }
 
-    p:not(.client-name) {
-      font-size: 0.8rem;
-      font-weight: 300;
-      font-style: italic;
-      padding: 1rem;
-      line-height: 2rem;
-    }
-
     .client-logo {
       font-size: 5rem;
       color: $grey;
@@ -53,21 +49,46 @@
       transition-duration: 500ms;
     }
 
-    p.client-name {
-      margin: 1rem auto;
-      color: $grey;
-      transition-property: color;
-      transition-duration: 500ms;
+    p.client-testimonial {
+      margin-bottom: 0;
+      font-size: 0.8rem;
+      font-weight: 300;
+      font-style: italic;
+      padding: 1rem;
+      line-height: 1.6rem;
     }
-    
+
+    p.client-contact {
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0 1rem 1rem;
+      line-height: 2rem;
+      letter-spacing: 1px;
+    }
   }
 
   .testimonials div:hover .client-logo {
     color: $black;
   }
-  .testimonials div:hover .client-name {
-    color: $black;
+
+  .logo-grid {
+    margin: 0 auto;
+    padding: 0 1.5rem 1.45rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    
+    .logo-grid-item {
+      max-width: 100px;
+
+      .logo-limit {
+        max-width: 75px;
+      }
+    }
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -84,6 +105,10 @@
         "client3"
         "blurb3"
       ;
+    }
+
+    .logo-grid {
+      grid-template-columns: 1fr 1fr;
     }
   }
 
