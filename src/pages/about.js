@@ -27,7 +27,7 @@ const AboutPage = (props) => (
       <div className={aboutStyles.formContainer}>
         <h2>Contact</h2>
         <form className={aboutStyles.contactForm} name="tsvideo-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="bot-field" value="tsvideo-contact" />
+          <input type="hidden" name="form-name" value="tsvideo-contact" />
           <div className={aboutStyles.formGroup}>
             <label>Name</label>
             <input type="text" name="name" placeholder="Full Name" />
