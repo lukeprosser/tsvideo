@@ -1,5 +1,7 @@
 import React from "react"
 
+import siml_logo from "../images/siml_logo.jpg"
+import golleyslater_logo from "../images/golleyslater_logo.jpg"
 import landrover_logo from "../images/landrover_logo.png"
 import yankeecandle_logo from "../images/yankeecandle_logo.png"
 import uwe_logo from "../images/uwe_logo.png"
@@ -9,8 +11,8 @@ import mitsubishi_logo from "../images/mitsubishi_logo.png"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDog } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faDog } from '@fortawesome/free-solid-svg-icons'
 import clientStyles from "../styles/clients.module.scss"
 
 const ClientPage = (props) => (
@@ -20,28 +22,27 @@ const ClientPage = (props) => (
       <div className={clientStyles.testimonials}>
 
           <div className={clientStyles.client1}>
-            <FontAwesomeIcon icon={faDog} className={clientStyles.clientLogo} />
+            <img src={admiral_logo} alt="Admiral" className={clientStyles.clientLogo} />
           </div>
           <div className={clientStyles.blurb1}>
             <p className={clientStyles.clientTestimonial}>"Working with Tom continues to be a joy. His skills as a bold filmmaker and quickfire editor are hugely valuable to our clients, while his devotion to each and every project is unsurpassed. Tom is a craftsman with a wonderfully easy-going nature - making the many projects we’ve undertaken together a breeze to deliver."</p>
-            <p className={clientStyles.clientContact}>Owen Williams, Managing Director</p>
+            <p className={clientStyles.clientContact}>Owen Williams - Managing Director, Admiral</p>
           </div>
           
-        
           <div className={clientStyles.client2}>
-            <FontAwesomeIcon icon={faDog} className={clientStyles.clientLogo} />
+            <img src={siml_logo} alt="SIML" className={clientStyles.clientLogo} />
           </div>
           <div className={clientStyles.blurb1}>
             <p className={clientStyles.clientTestimonial}>"We recently worked with Tom to produce a video that educated users on Cyber threats. Tom was helpful and professional throughout and nothing was too much trouble. The video was of great quality and well received by users."</p>
-            <p className={clientStyles.clientContact}>Stephan Donovan, Head of IT</p>
+            <p className={clientStyles.clientContact}>Stephan Donovan - Head of IT Security Culture, SIML</p>
           </div>
 
           <div className={clientStyles.client3}>
-            <FontAwesomeIcon icon={faDog} className={clientStyles.clientLogo} />
+            <img src={golleyslater_logo} alt="Golley Slater" className={clientStyles.clientLogo} />
           </div>
           <div className={clientStyles.blurb1}>
-            <p className={clientStyles.clientTestimonial}>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium molestias fugiat eligendi doloremque reiciendis vero magni dolorem. Earum deleniti vitae inventore voluptatem cumque. Commodi quasi necessitatibus quod earum neque!"</p>
-            <p className={clientStyles.clientContact}>Golley Slater contact, Job Title</p>
+            <p className={clientStyles.clientTestimonial}>"Tom is a sheer delight to work with. Talented, totally reliable and a joy to work alongside and introduce to clients, colleagues and fellow collaborators. We've worked with Tom on many campaigns and he always works his magic, even with the scantest of briefs and shortest of deadlines. He delivers excellent work on deadline, brief and budget - and always with a smile. Unflappable and a great chap to have around, we genuinely love working with Tom."</p>
+            <p className={clientStyles.clientContact}>Annabel Lloyd - Joint MD, Golley Slater</p>
           </div>
         
       </div>
@@ -64,6 +65,12 @@ const ClientPage = (props) => (
         </div>
         <div className={clientStyles.logoGridItem}>
           <img src={admiral_logo} alt="Admiral" className={clientStyles.logoLimit} />
+        </div>
+        <div className={clientStyles.logoGridItem}>
+          <img src={golleyslater_logo} alt="Golley Slater" className={clientStyles.logoLimit} />
+        </div>
+        <div className={clientStyles.logoGridItem}>
+          <img src={siml_logo} alt="SIML" className={clientStyles.logoLimit} />
         </div>
       </div>
 

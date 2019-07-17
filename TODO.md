@@ -1,14 +1,11 @@
 PROJECTS
 - Preferred image size: 1280 x 960 (4:3)
-- Project names
+- Cellular Agriculture link
+- Carterwood Analytics link
+- GS Wales 4.0 video not working
+- GS Apprenticeship link and image
 
 ABOUT
 - Contact form (link email)
-
-CLIENTS
-- Client testimonial logos (currently missing 3)
-
-SOCIAL
-- YouTube link
 
 DOMAIN

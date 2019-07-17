@@ -34,7 +34,7 @@ const AboutPage = (props) => (
           </div>
           <div className={aboutStyles.formGroup}>
             <label>Email</label>
-            <input type="text" name="email" placeholder="Email Address" />
+            <input type="email" name="email" placeholder="Email Address" />
           </div>
           <div className={aboutStyles.formGroup}>
             <label>Message</label>
