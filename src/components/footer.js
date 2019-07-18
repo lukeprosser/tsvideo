@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Footer = () => (
   <footer>
     <div className={footerStyles.container}>
+      <hr className={footerStyles.line}></hr>
       <div className={footerStyles.social}>
         <a href="https://www.linkedin.com/in/tom-smith-608657151/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "linkedin-in"]} className={footerStyles.socialLink} /></a>
         {/* <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "youtube"]} className={footerStyles.socialLink} /></a>

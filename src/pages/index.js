@@ -34,7 +34,7 @@ const IndexPage = (props) => (
           </div>
         </div>
       </a>
-      <a href="https://vimeo.com/channels/skateboarding/65899061" target="_blank" rel="noopener noreferrer">
+      <a href="https://youtu.be/jk3nMm6ZNbc" target="_blank" rel="noopener noreferrer">
         <div className={indexStyles.workGridItem}>
           <Img fluid={props.data.cellular_agriculture_casestudy.childImageSharp.fluid} className={indexStyles.image} />
           <div className={indexStyles.imageOverlay}>

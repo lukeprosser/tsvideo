@@ -11,6 +11,11 @@
     grid-gap: 2rem;
     align-items: center;
 
+    div.about-image {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+
     .blurb {
       padding-top: 1rem;
       font-size: 1rem;
@@ -76,9 +81,8 @@
     .about-container {
       grid-template-columns: 1fr;
 
-      .about-image {
+      div.about-image {
         max-width: 60%;
-        margin: 0 auto;
       }
 
       .blurb {

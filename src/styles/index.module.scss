@@ -63,6 +63,36 @@
   
   .work-grid {
     grid-template-columns: 1fr;
+
+    .work-grid-item {
+
+      .image-overlay {
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        transition: none;
+
+        .image-overlay-text {
+          position: relative;
+          margin: 0.1rem 0 0;
+          padding: 0 1rem;
+
+          h3 {
+            margin-bottom: 0;
+            padding-bottom: 0.1rem;
+            border-bottom: none;
+            font-size: 0.9rem;
+          }
+
+          p {
+            margin-bottom: 0;
+            font-size: 0.9rem;
+          }
+
+        }
+      }
+
+    }
   }
 
 }

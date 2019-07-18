@@ -43,7 +43,7 @@
     }
 
     .client-logo {
-      max-width: 150px;
+      max-width: 125px;
     }
 
     p.client-testimonial {
@@ -108,9 +108,11 @@
         "blurb3"
       ;
 
-      img {
+      img.client-logo {
         margin-bottom: 0;
+        max-width: 100px
       }
+
     }
 
     .logo-grid {

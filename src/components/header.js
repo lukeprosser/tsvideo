@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       <h1 className={headerStyles.brand}>
         <Link to="/">{siteTitle}</Link>
       </h1>
-      <input type="checkbox" id="nav-toggle" className="nav-toggle" className={headerStyles.navToggle} />
+      <input type="checkbox" id="nav-toggle" className={headerStyles.navToggle} />
       <nav className={headerStyles.navbar}>
         <ul className={headerStyles.navList}>
           <li><Link className={headerStyles.navItem} activeClassName={headerStyles.active} to="/">Work</Link></li>
