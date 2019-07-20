@@ -24,6 +24,9 @@
       overflow: hidden;
       width: 0;
       height: 100%;
+      -webkit-transition: .5s ease;
+      -moz-transition: .5s ease;
+      -o-transition: .5s ease;
       transition: .5s ease;
 
       .image-overlay-text {
@@ -31,11 +34,13 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
         white-space: nowrap;
         letter-spacing: 2px;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
 
         h3 {
           margin-bottom: 0.5rem;
@@ -70,6 +75,10 @@
         position: absolute;
         width: 100%;
         height: 25%;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
         transition: none;
 
         .image-overlay-text {

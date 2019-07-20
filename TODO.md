@@ -1,9 +1,5 @@
 PROJECTS
 - Preferred image size: 1280 x 960 (4:3)
-- Project names on mobile
 
 - Carterwood Analytics link
-- GS Wales 4.0 video not working
 - GS Apprenticeship link and image
-
-DOMAIN

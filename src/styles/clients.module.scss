@@ -70,7 +70,6 @@
 
   .logo-grid {
     margin: 0 auto;
-    // padding: 0 1.5rem 1.45rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
@@ -82,6 +81,9 @@
 
       .logo-limit {
         max-width: 75px;
+      }
+      .logo-limit-plus {
+        max-width: 55px;
       }
     }
   }

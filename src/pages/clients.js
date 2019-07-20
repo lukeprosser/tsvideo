@@ -7,6 +7,9 @@ import yankeecandle_logo from "../images/yankeecandle_logo.png"
 import uwe_logo from "../images/uwe_logo.png"
 import admiral_logo from "../images/admiral_logo.png"
 import mitsubishi_logo from "../images/mitsubishi_logo.png"
+import national_trust_logo from "../images/national_trust_logo.png"
+import barclays_logo from "../images/barclays_logo.png"
+import sportwales_logo from "../images/sportwales_logo.png"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -26,7 +29,7 @@ const ClientPage = (props) => (
           </div>
           <div className={clientStyles.blurb1}>
             <p className={clientStyles.clientTestimonial}>"Working with Tom continues to be a joy. His skills as a bold filmmaker and quickfire editor are hugely valuable to our clients, while his devotion to each and every project is unsurpassed. Tom is a craftsman with a wonderfully easy-going nature - making the many projects we’ve undertaken together a breeze to deliver."</p>
-            <p className={clientStyles.clientContact}>Owen Williams - Managing Director, Admiral</p>
+            <p className={clientStyles.clientContact}>Stephan Donovan - Head of IT Security Culture, Admiral</p>
           </div>
           
           <div className={clientStyles.client2}>
@@ -34,7 +37,7 @@ const ClientPage = (props) => (
           </div>
           <div className={clientStyles.blurb1}>
             <p className={clientStyles.clientTestimonial}>"We recently worked with Tom to produce a video that educated users on Cyber threats. Tom was helpful and professional throughout and nothing was too much trouble. The video was of great quality and well received by users."</p>
-            <p className={clientStyles.clientContact}>Stephan Donovan - Head of IT Security Culture, SIML</p>
+            <p className={clientStyles.clientContact}>Owen Williams - Managing Director, Siml</p>
           </div>
 
           <div className={clientStyles.client3}>
@@ -52,8 +55,25 @@ const ClientPage = (props) => (
       <div className={clientStyles.logoGrid}>
         {/* Use standard img tags due to gatsby-image/CSS grid conflict */}
         <div className={clientStyles.logoGridItem}>
+          <img src={national_trust_logo} alt="National Trust" className={clientStyles.logoLimitPlus} />
+        </div>
+        <div className={clientStyles.logoGridItem}>
+          <img src={admiral_logo} alt="Admiral" className={clientStyles.logoLimit} />
+        </div>
+        <div className={clientStyles.logoGridItem}>
+          <img src={mitsubishi_logo} alt="Mitsubishi" className={clientStyles.logoLimit} />
+        </div>
+
+        <div className={clientStyles.logoGridItem}>
+          <img src={barclays_logo} alt="Barclays" />
+        </div>
+        <div className={clientStyles.logoGridItem}>
           <img src={landrover_logo} alt="Land Rover" />
         </div>
+        <div className={clientStyles.logoGridItem}>
+          <img src={golleyslater_logo} alt="Golley Slater" className={clientStyles.logoLimit} />
+        </div>
+
         <div className={clientStyles.logoGridItem}>
           <img src={yankeecandle_logo} alt="Yankee Candle" />
         </div>
@@ -61,16 +81,7 @@ const ClientPage = (props) => (
           <img src={uwe_logo} alt="UWE" />
         </div>
         <div className={clientStyles.logoGridItem}>
-          <img src={mitsubishi_logo} alt="Mitsubishi" className={clientStyles.logoLimit} />
-        </div>
-        <div className={clientStyles.logoGridItem}>
-          <img src={admiral_logo} alt="Admiral" className={clientStyles.logoLimit} />
-        </div>
-        <div className={clientStyles.logoGridItem}>
-          <img src={golleyslater_logo} alt="Golley Slater" className={clientStyles.logoLimit} />
-        </div>
-        <div className={clientStyles.logoGridItem}>
-          <img src={siml_logo} alt="SIML" className={clientStyles.logoLimit} />
+          <img src={sportwales_logo} alt="Sport Wales" />
         </div>
       </div>
 
