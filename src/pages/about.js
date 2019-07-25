@@ -16,9 +16,9 @@ const AboutPage = (props) => (
           <Img fluid={props.data.tom_profile.childImageSharp.fluid} className={aboutStyles.aboutImage} />
         </div>
         <div className={aboutStyles.blurb}>
-          <p>A filmmaker with an impressive background in digital and social campaigns.</p>
-          <p>Tom plunged himself into an extended internship with one of Wales' foremost video production agencies, honing his craft and developing as a multi-skilled creative.</p>
-          <p>Tom has {new Date().getFullYear() - new Date(2014)} years experience working within the digital video space, delivering campaigns for clients such as Admiral, Land Rover, Yankee Candle, Mitsubishi and The National Trust.</p>
+          <p>Hey, I'm Tom <span role="img" aria-label="Smile">&#128522;</span></p>
+          <p>I started my career at one of Wales' foremost video production agencies, working as an Editor and Camera Operator, whilst developing as a multi-skilled creative.</p>
+          <p>I have {new Date().getFullYear() - new Date(2014)} years experience working within the digital video space, delivering campaigns for clients such as Land Rover, Yankee Candle, Mitsubishi, The National Trust, Barclays, Admiral and many more.</p>
         </div>
       </div>
 
