@@ -45,7 +45,7 @@ const IndexPage = (props) => (
           </div>
         </div>
       </a>
-      <a href="https://vimeo.com/channels/skateboarding/65899061" target="_blank" rel="noopener noreferrer">
+      <a href="https://youtu.be/gu65pE7sF40" target="_blank" rel="noopener noreferrer">
         <div className={indexStyles.workGridItem}>
           <Img fluid={props.data.carterwood_analytics.childImageSharp.fluid} className={indexStyles.image} />
           <div className={indexStyles.imageOverlay}>
