@@ -28,7 +28,7 @@ const ClientPage = (props) => (
             <img src={admiral_logo} alt="Admiral" className={clientStyles.clientLogo} />
           </div>
           <div className={clientStyles.blurb1}>
-            <p className={clientStyles.clientTestimonial}>"Working with Tom continues to be a joy. His skills as a bold filmmaker and quickfire editor are hugely valuable to our clients, while his devotion to each and every project is unsurpassed. Tom is a craftsman with a wonderfully easy-going nature - making the many projects we’ve undertaken together a breeze to deliver."</p>
+            <p className={clientStyles.clientTestimonial}>"We recently worked with Tom to produce a video that educated users on Cyber threats. Tom was helpful and professional throughout and nothing was too much trouble. The video was of great quality and well received by users."</p>
             <p className={clientStyles.clientContact}>Stephan Donovan - Head of IT Security Culture, Admiral</p>
           </div>
           
@@ -36,10 +36,10 @@ const ClientPage = (props) => (
             <img src={siml_logo} alt="SIML" className={clientStyles.clientLogo} />
           </div>
           <div className={clientStyles.blurb1}>
-            <p className={clientStyles.clientTestimonial}>"We recently worked with Tom to produce a video that educated users on Cyber threats. Tom was helpful and professional throughout and nothing was too much trouble. The video was of great quality and well received by users."</p>
+            <p className={clientStyles.clientTestimonial}>"Working with Tom continues to be a joy. His skills as a bold filmmaker and quickfire editor are hugely valuable to our clients, while his devotion to each and every project is unsurpassed. Tom is a craftsman with a wonderfully easy-going nature - making the many projects we’ve undertaken together a breeze to deliver."</p>
             <p className={clientStyles.clientContact}>Owen Williams - Managing Director, Siml</p>
           </div>
-
+          
           <div className={clientStyles.client3}>
             <img src={golleyslater_logo} alt="Golley Slater" className={clientStyles.clientLogo} />
           </div>
