@@ -77,13 +77,16 @@
     align-items: center;
     
     .logo-grid-item {
-      max-width: 100px;
+      max-width: 150px;
 
-      .logo-limit {
-        max-width: 75px;
+      .logo-limit-sm {
+        max-width: 100px;
       }
-      .logo-limit-plus {
-        max-width: 55px;
+      .logo-limit-md {
+        max-width: 80px;
+      }
+      .logo-limit-lg {
+        max-width: 75px;
       }
     }
   }
@@ -119,6 +122,10 @@
 
     .logo-grid {
       grid-template-columns: 1fr 1fr;
+
+      .logo-grid-item {
+        max-width: 125px;
+      }
     }
   }
 

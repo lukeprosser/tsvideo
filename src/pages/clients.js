@@ -1,15 +1,17 @@
 import React from "react"
 
+import admiral_logo from "../images/admiral_logo.png"
 import siml_logo from "../images/siml_logo.jpg"
 import golleyslater_logo from "../images/golleyslater_logo.jpg"
-import landrover_logo from "../images/landrover_logo.png"
-import yankeecandle_logo from "../images/yankeecandle_logo.png"
-import uwe_logo from "../images/uwe_logo.png"
-import admiral_logo from "../images/admiral_logo.png"
+
+import axa_logo from "../images/axa_logo.png"
 import mitsubishi_logo from "../images/mitsubishi_logo.png"
-import national_trust_logo from "../images/national_trust_logo.png"
 import barclays_logo from "../images/barclays_logo.png"
-import sportwales_logo from "../images/sportwales_logo.png"
+import landrover_logo from "../images/landrover_logo.png"
+import lexus_logo from "../images/lexus_logo.png"
+import national_trust_logo from "../images/national_trust_logo.png"
+import uwe_logo from "../images/uwe_logo.png"
+import confused_logo from "../images/confused_logo.png"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -45,7 +47,7 @@ const ClientPage = (props) => (
           </div>
           <div className={clientStyles.blurb1}>
             <p className={clientStyles.clientTestimonial}>"Tom is a sheer delight to work with. Talented, totally reliable and a joy to work alongside and introduce to clients, colleagues and fellow collaborators. We've worked with Tom on many campaigns and he always works his magic, even with the scantest of briefs and shortest of deadlines. He delivers excellent work on deadline, brief and budget - and always with a smile. Unflappable and a great chap to have around, we genuinely love working with Tom."</p>
-            <p className={clientStyles.clientContact}>Annabel Lloyd - Joint MD, Golley Slater</p>
+            <p className={clientStyles.clientContact}>Annabel Lloyd - Director, Golley Slater</p>
           </div>
         
       </div>
@@ -54,16 +56,16 @@ const ClientPage = (props) => (
 
       <div className={clientStyles.logoGrid}>
         {/* Use standard img tags due to gatsby-image/CSS grid conflict */}
+        {/* logoLimitSm, logoLimitMd, logoLimitLg apply varying max width to logo sizes for consistency */}
         <div className={clientStyles.logoGridItem}>
-          <img src={national_trust_logo} alt="National Trust" className={clientStyles.logoLimitPlus} />
+          <img src={axa_logo} alt="AXA" className={clientStyles.logoLimitMd} />
         </div>
         <div className={clientStyles.logoGridItem}>
-          <img src={admiral_logo} alt="Admiral" className={clientStyles.logoLimit} />
+          <img src={admiral_logo} alt="Admiral" className={clientStyles.logoLimitSm} />
         </div>
         <div className={clientStyles.logoGridItem}>
-          <img src={mitsubishi_logo} alt="Mitsubishi" className={clientStyles.logoLimit} />
+          <img src={mitsubishi_logo} alt="Mitsubishi" className={clientStyles.logoLimitSm} />
         </div>
-
         <div className={clientStyles.logoGridItem}>
           <img src={barclays_logo} alt="Barclays" />
         </div>
@@ -71,17 +73,16 @@ const ClientPage = (props) => (
           <img src={landrover_logo} alt="Land Rover" />
         </div>
         <div className={clientStyles.logoGridItem}>
-          <img src={golleyslater_logo} alt="Golley Slater" className={clientStyles.logoLimit} />
+          <img src={lexus_logo} alt="Lexus" />
         </div>
-
         <div className={clientStyles.logoGridItem}>
-          <img src={yankeecandle_logo} alt="Yankee Candle" />
+          <img src={national_trust_logo} alt="National Trust" className={clientStyles.logoLimitLg} />
         </div>
         <div className={clientStyles.logoGridItem}>
           <img src={uwe_logo} alt="UWE" />
         </div>
         <div className={clientStyles.logoGridItem}>
-          <img src={sportwales_logo} alt="Sport Wales" />
+          <img src={confused_logo} alt="Confused" />
         </div>
       </div>
 
