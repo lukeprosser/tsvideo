@@ -5,7 +5,7 @@ module.exports = {
     description: `Video Production By Tom Smith`,
     author: `@createdeluxe`,
     url: `https://www.tomsmithvideo.co.uk`,
-    image: `mitsubishi_shogun_index.jpg`
+    image: `/mitsubishi_shogun_index.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
