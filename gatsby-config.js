@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Tom Smith Video`,
+    titleTemplate: `%s`,
     description: `Video Production`,
     author: `@createdeluxe`,
     url: `https://www.tomsmithvideo.co.uk`,
-    image: `src/images/mitsubishi_shogun`
+    image: `/images/mitsubishi_shogun.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
