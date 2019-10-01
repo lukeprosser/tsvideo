@@ -5,7 +5,7 @@ module.exports = {
     description: `Video Production By Tom Smith`,
     author: `@createdeluxe`,
     url: `https://www.tomsmithvideo.co.uk`,
-    image: `/images/og_image.jpg`
+    image: `/assets/og_image.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,6 +14,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/static/assets`,
       },
     },
     `gatsby-transformer-sharp`,
