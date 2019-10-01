@@ -39,14 +39,14 @@ const SEO = ({ title, description, image, pathname, article }) => (
             )}
             {seo.image && <meta property="og:image" content={seo.image} />}
             {/* {seo.image && <meta property="og:image" content="https://tomsmithvideo.co.uk/og_image.jpg" />} */}
-            <meta name="twitter:card" content={seo.image} />
+            <meta name="twitter:card" content="summary_large_image" />
             {seo.title && <meta name="twitter:title" content={seo.title} />}
             {seo.description && (
               <meta name="twitter:description" content={seo.description} />
             )}
-            {seo.image && <meta name="twitter:image" content={seo.image} />}
-            {/* {seo.image && <meta name="twitter:image" content="https://tomsmithvideo.co.uk/og_image.jpg" />} */}
-          </Helmet> 
+            {/* {seo.image && <meta name="twitter:image" content={seo.image} />} */}
+            {seo.image && <meta name="twitter:image" content="https://tomsmithvideo.co.uk/og_image.jpg" />}
+          </Helmet>
         </>
       )
     }}
