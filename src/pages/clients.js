@@ -16,8 +16,6 @@ import confused_logo from "../images/confused_logo.png"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faDog } from '@fortawesome/free-solid-svg-icons'
 import clientStyles from "../styles/clients.module.scss"
 
 const ClientPage = (props) => (

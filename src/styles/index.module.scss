@@ -1,3 +1,5 @@
+@import '../../node_modules/react-modal-video/scss/modal-video.scss';
+
 .work-grid {
   margin: 0 auto;
   padding: 0 1.5rem 1.45rem;
@@ -56,6 +58,7 @@
         }
       }
     }
+
   }
 
   .work-grid-item:hover .image-overlay {
