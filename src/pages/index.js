@@ -2,14 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-// import SEO from "../components/seo"
+import SEO from "../components/seo"
 import Layout from "../components/layout"
 
 import indexStyles from "../styles/index.module.scss"
 
 const IndexPage = (props) => (
   <Layout>
-    {/* <SEO title="Home" /> */}
+    <SEO title="Home" />
     <div className={indexStyles.workGrid}>
       <a href="https://youtu.be/v0m3M6vDoOE" target="_blank" rel="noopener noreferrer">
         <div className={indexStyles.workGridItem}>
